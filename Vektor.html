@@ -1,0 +1,1151 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Vector &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Vektor';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Transformasi Linear" href="Transformasi_linear.html" />
+    <link rel="prev" title="Determinan" href="determinan%20%282%29.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo algebra.jpg" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo algebra.jpg" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to My Website!
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="sistemlinear%20%281%29.html">Sistem Persamaan Linear</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aljabar%20%281%29.html">Aljabar Matrik</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invers%20%281%29.html">Matriks Invers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="determinan%20%282%29.html">Determinan</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Vector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Transformasi_linear.html">Transformasi Linear</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aplikasi.html">Aplikasi dari Aljabar Linier dengan PageRank</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/drive/1KTE2aQXvrNqd5LRt5j4y9eFTNZXcnrx-?usp=sharing/github/KamilaMF156/alin/blob/master/tugas/Vektor.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/KamilaMF156/alin" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/KamilaMF156/alin/issues/new?title=Issue%20on%20page%20%2FVektor.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Vektor.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Vector</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-eigenvalue-dan-eigenvector">Konsep Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-2x2">Matriks 2x2</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-eigenvalue"><em>Menentukan Eigenvalue</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-eigenvector"><em>Menentukan Eigenvector</em></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-3x3">Matriks 3x3</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><em>Menentukan Eigenvalue</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><em>Menentukan Eigenvector</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-menghitung-eigenvalue-dan-eigenvector-menggunakan-numpy">Contoh menghitung eigenvalue dan eigenvector menggunakan numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dari-eigen-value-dan-eigen-vektor">Implementasi dari Eigen Value dan Eigen Vektor.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-component-analysis-pca">Principal Component Analysis (PCA)</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="vector">
+<h1>Vector<a class="headerlink" href="#vector" title="Link to this heading">#</a></h1>
+<section id="konsep-eigenvalue-dan-eigenvector">
+<h2>Konsep Eigenvalue dan Eigenvector<a class="headerlink" href="#konsep-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h2>
+<p>Kata “eigen” berasal dari Bahasa Jerman yang artinya “asli” atau “karakteristik”. Dengan kata lain, nilai eigen menyatakan nilai karakteristik dari sebuah matriks yang berukuran n x n.</p>
+<p>Konsep mengenai Eigenvalue dan Eigenvector ini diaplikasikan dalam berbagai bidang ilmu seperti statistika, ekonomi, komputer dan ilmu lainnya. Berikut adalah definisinya:</p>
+<blockquote>
+<div><p>Jika A adalah matriks n x n, maka vektor tak-nol <span class="math notranslate nohighlight">\(x\)</span> di dalam <span class="math notranslate nohighlight">\(R^n\)</span> dinamakan eigenvector dari A jika <span class="math notranslate nohighlight">\(Ax\)</span> adalah perkalian suatu skalar <span class="math notranslate nohighlight">\(λ\)</span> dengan <span class="math notranslate nohighlight">\(x\)</span>, yaitu <span class="math notranslate nohighlight">\(Ax=λx\)</span>. Skalar <span class="math notranslate nohighlight">\(λ\)</span> dinamakan eigenvalue dari A dan <span class="math notranslate nohighlight">\(x\)</span> dikatakan vektor eigen yang bersesuaian dengan <span class="math notranslate nohighlight">\(λ\)</span>.</p>
+</div></blockquote>
+<p>Berikut adalah cara menghitung eigenvalue dan eigenvector secara manual:</p>
+<ul class="simple">
+<li><p>Diberikan sebuah matriks A berukuran n x n. Vektor eigen dan nilai eigen dari matriks A dihitung sebagai berikut:</p></li>
+</ul>
+<blockquote>
+<div><p>Ax = λx</p>
+</div></blockquote>
+<blockquote>
+<div><p>IAx = λIx (kalikan kedua ruas dengan I = matriks identitas)</p>
+</div></blockquote>
+<blockquote>
+<div><p>Ax = λIx</p>
+</div></blockquote>
+<blockquote>
+<div><p>(λI-A)x = 0</p>
+</div></blockquote>
+<blockquote>
+<div><p>x = 0 adalah solusi trivial dari (λI-A)x = 0. Agar memiliki solusi tidak-nol, maka haruslah det(λI-A) = 0 (persamaan ini disebut persamaan karakteristik dari matriks A, dan akar-akar persamaan tersebut, yaitu λ, dinamakan akar-akar karateristik atau nilai-nilai eigen).</p>
+</div></blockquote>
+<section id="matriks-2x2">
+<h3>Matriks 2x2<a class="headerlink" href="#matriks-2x2" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\( A =
+ \begin{bmatrix}
+  3 &amp; 0\\
+  8 &amp; -1
+ \end{bmatrix}
+\)</span></p>
+<section id="menentukan-eigenvalue">
+<h4><em>Menentukan Eigenvalue</em><a class="headerlink" href="#menentukan-eigenvalue" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\(λI-A=\)</span>
+<span class="math notranslate nohighlight">\(λ
+ \begin{bmatrix}
+  1 &amp; 0\\
+  0 &amp; 1
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(-
+ \begin{bmatrix}
+  3 &amp; 0\\
+  8 &amp; -1
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  λ &amp; 0\\
+  0 &amp; λ
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(-
+ \begin{bmatrix}
+  3 &amp; 0\\
+  8 &amp; -1
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  λ-3 &amp; 0\\
+  -8 &amp; λ+1
+ \end{bmatrix}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\(det(λI-A)=0\)</span>
+<span class="math notranslate nohighlight">\(→
+ \begin{vmatrix}
+  λ-3 &amp; 0\\
+  -8 &amp; λ+1
+ \end{vmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=0\)</span>
+<span class="math notranslate nohighlight">\(→ (λ-3)(λ+1) = 0\)</span>
+<span class="math notranslate nohighlight">\(→ λ_1=3\)</span> dan <span class="math notranslate nohighlight">\(λ_2=-1\)</span></p>
+</section>
+<section id="menentukan-eigenvector">
+<h4><em>Menentukan Eigenvector</em><a class="headerlink" href="#menentukan-eigenvector" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\((λI-A)x = 0\)</span>
+<span class="math notranslate nohighlight">\(→
+ \begin{bmatrix}
+  λ-3 &amp; 0\\
+  -8 &amp; λ+1
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  x_1\\
+  x_2
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  0\\
+  0
+ \end{bmatrix}
+\)</span></p>
+<blockquote>
+<div><p><strong>Untuk λ=3</strong>
+<span class="math notranslate nohighlight">\(→
+ \begin{bmatrix}
+  0 &amp; 0\\
+  -8 &amp; 4
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  x_1\\
+  x_2
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  0\\
+  0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(→ -8x_1 + 4x_2 = 0 → 8x_1 = 4x_2 → x_1 = ½ x_2\)</span>
+<span class="math notranslate nohighlight">\(→ Solusi: x_1 = ½ t, x_2 = t, t ϵ R\)</span></p>
+</div></blockquote>
+<p>Berarti, eigenvectornya adalah
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  \frac12 t\\
+  t
+ \end{bmatrix}
+\)</span></p>
+<blockquote>
+<div><p><strong>Untuk λ=-1</strong>
+<span class="math notranslate nohighlight">\(→
+ \begin{bmatrix}
+  -4 &amp; 0\\
+  -8 &amp; 0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  x_1\\
+  x_2
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  0\\
+  0
+ \end{bmatrix}
+\)</span></p>
+</div></blockquote>
+<blockquote>
+<div><p>Selesaikan dengan Eliminasi Gauss:
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  -4 &amp; 0 &amp; 0\\
+  -8 &amp; 0 &amp; 0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(R1/(-4)\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  1 &amp; 0 &amp; 0\\
+  -8 &amp; 0 &amp; 0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(R2+8R1\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  1 &amp; 0 &amp; 0\\
+  0 &amp; 0 &amp; 0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(→ Solusi: x_1 = 0, x_2 = t, t ϵ R\)</span></p>
+</div></blockquote>
+<p>Berarti, eigenvectornya adalah
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  0\\
+  t
+ \end{bmatrix}
+\)</span></p>
+</section>
+</section>
+<section id="matriks-3x3">
+<h3>Matriks 3x3<a class="headerlink" href="#matriks-3x3" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\( A =
+ \begin{bmatrix}
+  3 &amp; -2 &amp; 0\\
+  -2 &amp; 3 &amp; 0\\
+  0 &amp; 0 &amp; 5
+ \end{bmatrix}
+\)</span></p>
+<section id="id1">
+<h4><em>Menentukan Eigenvalue</em><a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\(λI-A=\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  λ &amp; 0 &amp; 0\\
+  0 &amp; λ &amp; 0\\
+  0 &amp; 0 &amp; λ
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(-
+ \begin{bmatrix}
+  3 &amp; -2 &amp; 0\\
+  -2 &amp; 3 &amp; 0\\
+  0 &amp; 0 &amp; 5
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  λ-3 &amp; -2 &amp; 0\\
+  -2 &amp; λ-3 &amp; 0\\
+  0 &amp; 0 &amp; λ-5
+ \end{bmatrix}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\(det(λI-A)=0\)</span>
+<span class="math notranslate nohighlight">\(→
+ \begin{vmatrix}
+  λ-3 &amp; -2 &amp; 0\\
+  -2 &amp; λ-3 &amp; 0\\
+  0 &amp; 0 &amp; λ-5
+ \end{vmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=0\)</span></p>
+<p>Gunakan baris ke-3 sebagai acuan:</p>
+<p><span class="math notranslate nohighlight">\(0
+ \begin{vmatrix}
+  -2 &amp; 0\\
+  λ-3 &amp; 0
+ \end{vmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(-0
+ \begin{vmatrix}
+  λ-3 &amp; 0\\
+  -2 &amp; 0
+ \end{vmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(+(λ-5)
+ \begin{vmatrix}
+  λ-3 &amp; -2\\
+  -2 &amp; λ-3
+ \end{vmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=0\)</span></p>
+<p><span class="math notranslate nohighlight">\((λ - 5)( (λ - 3)(λ - 3) - 4) = 0\)</span></p>
+<p><span class="math notranslate nohighlight">\((λ - 5) (λ2 - 6λ + 5) = 0\)</span></p>
+<p><span class="math notranslate nohighlight">\((λ - 5) (λ - 5)(λ - 1) = 0\)</span></p>
+<p><span class="math notranslate nohighlight">\(→ λ_1=5\)</span> dan <span class="math notranslate nohighlight">\(λ_2=1\)</span></p>
+</section>
+<section id="id2">
+<h4><em>Menentukan Eigenvector</em><a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\((λI-A)x = 0\)</span>
+<span class="math notranslate nohighlight">\(→
+ \begin{bmatrix}
+  λ-3 &amp; -2 &amp; 0\\
+  -2 &amp; λ-3 &amp; 0\\
+  0 &amp; 0 &amp; λ-5
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  x_1\\
+  x_2\\
+  x_3
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  0\\
+  0\\
+  0
+ \end{bmatrix}
+\)</span></p>
+<blockquote>
+<div><p><strong>Untuk λ=5</strong>
+<span class="math notranslate nohighlight">\(→
+ \begin{bmatrix}
+  2 &amp; 2 &amp; 0\\
+  2 &amp; 2 &amp; 0\\
+  0 &amp; 0 &amp; 0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  x_1\\
+  x_2\\
+  x_3
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  0\\
+  0\\
+  0
+ \end{bmatrix}
+\)</span></p>
+</div></blockquote>
+<blockquote>
+<div><p>Selesaikan dengan Eliminasi Gauss:</p>
+</div></blockquote>
+<p><em>Matrix Augmented</em></p>
+<p><span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  2 &amp; 2 &amp; 0\\
+  2 &amp; 2 &amp; 0\\
+  0 &amp; 0 &amp; 0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(R1/2\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  1 &amp; 1 &amp; 0\\
+  2 &amp; 2 &amp; 0\\
+  0 &amp; 0 &amp; 0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(R2-2R1\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  1 &amp; 1 &amp; 0\\
+  0 &amp; 0 &amp; 0\\
+  0 &amp; 0 &amp; 0
+ \end{bmatrix}
+\)</span></p>
+<p>diperoleh persamaan: <span class="math notranslate nohighlight">\(x_1 + x_2 = 0 → x_1 = -x_2\)</span></p>
+<p>misal <span class="math notranslate nohighlight">\(x_2 = s, x_3 = t\)</span>, maka <span class="math notranslate nohighlight">\(x_1 = -s \)</span></p>
+<p>Berarti, eigenvectornya adalah
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  -s\\
+  s\\
+  t
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=s
+ \begin{bmatrix}
+  -1\\
+  1\\
+  0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(+t
+ \begin{bmatrix}
+  0\\
+  0\\
+  1
+ \end{bmatrix}
+\)</span></p>
+<blockquote>
+<div><p><strong>Untuk λ=1</strong>
+<span class="math notranslate nohighlight">\(→
+ \begin{bmatrix}
+  -2 &amp; 2 &amp; 0\\
+  2 &amp; -2 &amp; 0\\
+  0 &amp; 0 &amp; -4
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  x_1\\
+  x_2\\
+  x_3
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  0\\
+  0\\
+  0
+ \end{bmatrix}
+\)</span></p>
+</div></blockquote>
+<blockquote>
+<div><p>Selesaikan dengan Eliminasi Gauss:</p>
+</div></blockquote>
+<p><em>Matrix Augmented</em></p>
+<p><span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  -2 &amp; 2 &amp; 0 &amp; 0\\
+  2 &amp; -2 &amp; 0 &amp; 0\\
+  0 &amp; 0 &amp; -4 &amp; 0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(R1/(-2)\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  1 &amp; -1 &amp; 0 &amp; 0\\
+  2 &amp; -2 &amp; 0 &amp; 0\\
+  0 &amp; 0 &amp; -4 &amp; 0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(R2-2R1\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  1 &amp; -1 &amp; 0 &amp; 0\\
+  0 &amp; 0 &amp; 0 &amp; 0\\
+  0 &amp; 0 &amp; -4 &amp; 0
+ \end{bmatrix}
+\)</span>
+<span class="math notranslate nohighlight">\(R3/(-4)\)</span>
+<span class="math notranslate nohighlight">\(
+ \begin{bmatrix}
+  1 &amp; -1 &amp; 0 &amp; 0\\
+  0 &amp; 0 &amp; 0 &amp; 0\\
+  0 &amp; 0 &amp; 1 &amp; 0
+ \end{bmatrix}
+\)</span></p>
+<p>diperoleh persamaan: <span class="math notranslate nohighlight">\(x_3 = 0, x_1 - x_2 = 0 → x_1 = x_2\)</span></p>
+<p>misal <span class="math notranslate nohighlight">\(x_2 = t\)</span>, maka <span class="math notranslate nohighlight">\(x_1 = t\)</span></p>
+<p>Berarti, eigenvectornya adalah
+<span class="math notranslate nohighlight">\(=
+ \begin{bmatrix}
+  t\\
+  t\\
+  0
+ \end{bmatrix}
+\)</span></p>
+</section>
+</section>
+</section>
+<section id="contoh-menghitung-eigenvalue-dan-eigenvector-menggunakan-numpy">
+<h2>Contoh menghitung eigenvalue dan eigenvector menggunakan numpy<a class="headerlink" href="#contoh-menghitung-eigenvalue-dan-eigenvector-menggunakan-numpy" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">linalg</span> <span class="k">as</span> <span class="n">LA</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">LA</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 3  0]
+ [ 8 -1]]
+[-1.  3.]
+[[0. 0.]
+ [1. 1.]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+<span class="n">c</span><span class="p">,</span> <span class="n">d</span> <span class="o">=</span> <span class="n">LA</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 3 -2  0]
+ [-2  3  0]
+ [ 0  0  5]]
+[5. 1. 5.]
+[[ 1.  1.  0.]
+ [-1.  1.  0.]
+ [ 0.  0.  1.]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="implementasi-dari-eigen-value-dan-eigen-vektor">
+<h2>Implementasi dari Eigen Value dan Eigen Vektor.<a class="headerlink" href="#implementasi-dari-eigen-value-dan-eigen-vektor" title="Link to this heading">#</a></h2>
+<section id="principal-component-analysis-pca">
+<h3>Principal Component Analysis (PCA)<a class="headerlink" href="#principal-component-analysis-pca" title="Link to this heading">#</a></h3>
+<p>Secara intuitif, PCA adalah prosedur transformasi yang mengubah matriks data dengan fitur-fitur yang mungkin berkorelasi menjadi sekumpulan variabel yang tidak berkorelasi linier yang disebut komponen utama. Setiap komponen utama merupakan kombinasi linier dari fitur asli (<span class="math notranslate nohighlight">\(PCᵢ = Xϕᵢ\)</span>, di sini <span class="math notranslate nohighlight">\(PCᵢ\)</span> adalah singkatan dari komponen utama ke-i) dan memperhitungkan varian terbesar yang mungkin terjadi serta ortogonal terhadap komponen sebelumnya (jika <span class="math notranslate nohighlight">\(i ≠ j, PCᵢ ⋅ PCⱼ = 0\)</span>).</p>
+<p>Mengingat matriks fitur X berbentuk n x p yang berada di tengah , yaitu rata-rata kolom telah dikurangi dan sekarang sama dengan nol, kasus penggunaan PCA yang umum meliputi:</p>
+<ul class="simple">
+<li><p>Pengurangan dimensi: temukan perkiraan dimensi yang lebih rendah dari X bentuk n x k (di mana k jauh lebih kecil dari p ) dengan tetap mempertahankan sebagian besar varian, sebagai langkah pra-pemrosesan untuk klasifikasi atau visualisasi.</p></li>
+<li><p>Rekayasa fitur: membuat representasi baru dari X dengan p fitur yang tidak berkorelasi linier.</p></li>
+<li><p>Pembelajaran tanpa pengawasan: ekstrak k komponen utama (di mana k seringkali jauh lebih kecil dari p). Pahami kumpulan data dengan melihat bagaimana fitur asli berkontribusi terhadap faktor-faktor ini.</p></li>
+</ul>
+<p>Secara konseptual, penting untuk diingat bahwa PCA adalah pendekatan analisis data multivariat dan EVD dan SVD adalah metode numerik.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Implementasi secara EVD</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">pcaEVD</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+    <span class="n">n</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">X_centered</span> <span class="o">=</span> <span class="n">X</span> <span class="o">-</span> <span class="n">X</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">C</span> <span class="o">=</span> <span class="p">(</span><span class="n">X_centered</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">X_centered</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">e_vals</span><span class="p">,</span> <span class="n">e_vecs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+    
+    <span class="n">idx</span> <span class="o">=</span> <span class="n">e_vals</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">e_vals</span> <span class="o">=</span> <span class="n">e_vals</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+    <span class="n">e_vecs</span> <span class="o">=</span> <span class="n">e_vecs</span><span class="p">[:,</span> <span class="n">idx</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="p">(</span><span class="n">X_centered</span> <span class="o">@</span> <span class="n">e_vecs</span><span class="p">),</span> <span class="n">e_vals</span><span class="p">,</span> <span class="n">e_vecs</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+
+<span class="n">components</span><span class="p">,</span> <span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">pcaEVD</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">rounded_components</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">components</span><span class="p">)</span>
+<span class="n">rounded_eigenvalues</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)</span>
+<span class="n">rounded_eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">eigenvectors</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Components:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">rounded_components</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalues:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">rounded_eigenvalues</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvectors:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">rounded_eigenvectors</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Components:
+ [[-3. -0.]
+ [ 3.  0.]]
+Eigenvalues:
+ [13.  0.]
+Eigenvectors:
+ [[ 1.  0.]
+ [-0.  1.]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Implementasi secara SVD</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">pcaSVD</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+    <span class="c1"># Center X and get covariance matrix C</span>
+    <span class="n">n</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">X_centered</span> <span class="o">=</span> <span class="n">X</span> <span class="o">-</span> <span class="n">X</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1"># SVD</span>
+    <span class="n">u</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">vt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">X_centered</span><span class="p">,</span> <span class="n">full_matrices</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># Return principal compnents and eigenvalues to calculate the portion of sample variance explained</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">X_centered</span> <span class="o">@</span> <span class="n">vt</span><span class="o">.</span><span class="n">T</span><span class="p">),</span> <span class="p">(</span><span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">8</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+
+<span class="n">com</span><span class="p">,</span> <span class="n">ev</span> <span class="o">=</span> <span class="n">pcaSVD</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">rounded_components</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">com</span><span class="p">)</span>
+<span class="n">rounded_eigenvalues</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">ev</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Components:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">rounded_components</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalues:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">rounded_eigenvalues</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Components:
+ [[-3.  0.]
+ [ 3.  0.]]
+Eigenvalues:
+ [13.  0.]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="determinan%20%282%29.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Determinan</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Transformasi_linear.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Transformasi Linear</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-eigenvalue-dan-eigenvector">Konsep Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-2x2">Matriks 2x2</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-eigenvalue"><em>Menentukan Eigenvalue</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-eigenvector"><em>Menentukan Eigenvector</em></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-3x3">Matriks 3x3</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><em>Menentukan Eigenvalue</em></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><em>Menentukan Eigenvector</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-menghitung-eigenvalue-dan-eigenvector-menggunakan-numpy">Contoh menghitung eigenvalue dan eigenvector menggunakan numpy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dari-eigen-value-dan-eigen-vektor">Implementasi dari Eigen Value dan Eigen Vektor.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principal-component-analysis-pca">Principal Component Analysis (PCA)</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
